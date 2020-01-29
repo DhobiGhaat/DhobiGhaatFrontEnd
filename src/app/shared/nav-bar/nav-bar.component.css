@@ -1,0 +1,25 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+
+#options{
+    padding-top: 35px;
+}
+
+#logo{
+    padding-top: 17px;
+}
+
+a:hover{
+    color: #ADDFFF;
+}
+
+#options{
+    text-align: right;
+}
+
+#navBar{
+    background-color: #FBB117;
+}
+

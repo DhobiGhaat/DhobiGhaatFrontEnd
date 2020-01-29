@@ -1,0 +1,20 @@
+<mat-toolbar id="navBar" class="mat-elevation-z8">
+    <div class="row">
+        <div id="logo" class="col-6">
+            <img src="./assets/images/Logo.png" height="90px" width="300px">
+        </div>
+
+        <!-- <div class="spacer"></div> -->
+
+        <div id="options" class="col-6">
+            <a mat-button *ngIf="showing" routerLink="login">Login</a>
+            <a mat-button *ngIf="showing" routerLink="register">Register</a>
+            <a mat-button *ngIf="!showing" routerLink="welcome/name">Home</a>
+            <a mat-button *ngIf="!showing" (click)="Logout()" routerLink="logout">Logout</a>
+            <a mat-button *ngIf="!showing" routerLink="about-us">About-Us</a>
+            <a mat-button *ngIf="!showing" routerLink="feedback">Give-Feedback</a>
+            <a mat-raised-button color="accent" *ngIf="!showing" routerLink="profile">Profile</a>
+        </div>
+    </div>
+
+</mat-toolbar>

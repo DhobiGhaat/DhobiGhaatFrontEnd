@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-header">
+        <h3> Profile </h3>
+    </div>
+
+    <div id="profileTable" class="table table-borderless">
+            <tr>
+                <th>FirstName :- </th>
+                <td>{{customer.firstName}}</td>
+            </tr>
+            <tr>
+                <th>LastName :- </th>
+                <td>{{customer.lastName}}</td>
+            </tr>
+            <tr>
+                <th>Email-id :- </th>
+                <td>{{customer.email}}</td>
+            </tr>
+            <tr>
+                <th>Mobile number :- </th>
+                <td>{{customer.mobNo}}</td>
+            </tr>
+    </div>
+    <div class="card-header">
+        <h3> Addresses <div id="addBtn" class="btn btn-primary">Add new address</div> </h3>
+    </div>
+    
+    <div *ngFor="let add of address" id="addressTable" class="table table-borderless">
+        <tr>
+            <th rowspan="4">Address {{add.addressId}} :- </th>
+            <td>houseNo : {{add.houseNo}}</td>
+        </tr>
+        <tr>
+            <td>society : {{add.society}}</td>
+        </tr>
+        <tr>
+            <td>city : {{add.city}}</td>
+        </tr>
+        <tr>
+            <td>pincode : {{add.pincode}}</td>
+        </tr>
+        <tr>
+            <td colspan="2"> <div id="delBtn" class="btn btn-warning">Delete-address</div> </td>
+        </tr>
+
+    </div>
+</div>

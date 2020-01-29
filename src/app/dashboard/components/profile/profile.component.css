@@ -1,0 +1,19 @@
+.card{
+    padding: 10px;
+}
+
+td, th{
+    width: 200px;
+}
+
+#addressTable{
+    border: solid 0.1px;
+}
+
+#addBtn{
+    float: right;
+}
+
+#delBtn{
+    float: right;
+}

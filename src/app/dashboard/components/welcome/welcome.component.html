@@ -1,0 +1,21 @@
+<!-- header will be here !! -->
+<h3> Welcome {{Name | uppercase}}</h3>
+<div class="card">
+
+    
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <button [routerLink]="['/newRequest']" routerLinkActive="router-link-active" class="btn btn-success">Create new laundry request</button>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <button [routerLink]="['/trackOrder']" routerLinkActive="router-link-active" class="btn btn-success">Track your order</button>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <button [routerLink]="['/priceList']" routerLinkActive="router-link-active" class="btn btn-success">View our price list for all services</button>
+            </div>
+        </div><br>
+</div>
